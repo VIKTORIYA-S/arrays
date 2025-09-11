@@ -37,13 +37,15 @@ let productsList = [];
     const boughtCheckbox = document.querySelector('.bought-checkbox');
 console.log(boughtCheckbox);
 
+
+    };
+
     if (boughtCheckbox === checked) {
         console.log('checked');
             spanQuantity.style.textDecoration = 'line-through';
         } else {
             spanQuantity.style.textDecoration = 'none';
         }
-    };
 
 
 
