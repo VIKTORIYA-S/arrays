@@ -95,9 +95,6 @@ document.querySelector('.list').addEventListener('change', function(event) {
 });
 
 
-
-
-
 btn.addEventListener('click', function () {
     const productInput = document.getElementById('product');
     const quantityInput = document.getElementById('quantity');
@@ -124,30 +121,6 @@ btn.addEventListener('click', function () {
         unitPriceInput.value = '0';
     }
 });
-//     const productInput = document.getElementById('product');
-//     const quantityInput = document.getElementById('quantity');
-//     const unitPriceInput = document.getElementById('unit_price');
-
-//     const newProduct = productInput.value.trim();
-//     const newQuantity = Number(quantityInput.value);
-//     const newUnitPrice = Number(unitPriceInput.value);
-//     const newTotalPrice = (newQuantity * newUnitPrice).toFixed(2);
-
-//     if (newProduct !== '') {
-//         productsList.push({
-//             name: newProduct,
-//             quantity: newQuantity,
-//             unit_price: newUnitPrice,
-//             total_price: newTotalPrice,
-//             bought: false
-//         });
-//         renderListItems();
-//     productInput.value = '';
-//     quantityInput.value = '1';
-//     unitPriceInput.value = '0';
-//     }
-//     addTotalPrice();
-// });
 
 function addTotalPrice() {
     const totalPriceElement = document.querySelector('.list__total-price');
@@ -170,21 +143,3 @@ renderListItems();
 
 getTotalSum();
 
-
-// function deleteButtons() {
-//     const deleteBtns = document.querySelectorAll('.delete-btn');
-//         renderListItems();
-//             addTotalPrice();
-//     console.log(deleteBtns);
-//     deleteBtns.forEach((btn, index, arr) => {
-//         console.log(index);
-
-//         btn.addEventListener('click', () => {
-
-//             const dataIndex = btn.previousElementSibling.getAttribute('data-index');
-//             productsList.splice(dataIndex, 1);
-
-//         });
-//     });
-// }
-// deleteButtons();
