@@ -10,50 +10,97 @@ body {
   color: #000;
 }
 
-ol {
-  width: 50%;
-  height: 100vh;
-}
-
-.item,
-.input,
-.btn {
-  margin-bottom: 15px;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #000;
+.container {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #f60b0b;
+  gap: 40px;
 }
 
-.item {
+.wrapper {
+  width: 35%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.input {
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
 .btn {
   width: 30%;
+  height: 38px;
   background: #0702a8;
   color: #fff;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.wrapper__list {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  width: 100%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ol {
+  width: 50%;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
 }
 
 .quantity,
-.unit-price {
+.unit-price,
+.total-price,
+.name {
   display: inline-block;
-  width: 50px;
+  width: 55px;
   height: 38px;
   text-align: center;
   padding-top: 10px;
   border: 1px solid #000;
-  margin: 10px;
-  margin-left: 10px;
+  border-radius: 5px;
   font-weight: bold;
+}
+
+.name {
+  width: 30%;
 }
 
 .bought-checkbox {
   width: 20px;
   height: 20px;
-  margin-right: 10px;
   accent-color: #000;
 }
 
@@ -72,25 +119,8 @@ h1 {
   text-align: center;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #f60b0b;
-  gap: 40px;
-}
-
-.wrapper {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.list {
-  width: 50%;
-  margin-left: 20px;
+h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
